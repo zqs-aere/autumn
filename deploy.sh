@@ -29,13 +29,13 @@ echo '切换到需发布的分支 => '${deploy_branch}
 git checkout $deploy_branch
 
 echo '删除包'
-rm -rf ./node_modules
+sudo rm -rf ./node_modules
 echo '--------------------'
 echo '删除成功'
 echo '--------------------'
 
 echo '下载包'
-npm i
+sudo npm i
 echo '--------------------'
 echo '下载完成'
 echo '--------------------'
