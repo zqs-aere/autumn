@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="ts-40">q123</div>
-    <div class="ts-40">李丙鑫</div>
+    <div class="ts-40">xxxxx</div>
   </div>
 </template>
 

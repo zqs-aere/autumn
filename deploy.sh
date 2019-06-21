@@ -3,9 +3,9 @@
 env=''
 
 if [ x$1 != x ];then
-    env=$1
+  env=$1
 else
-    env='prod'
+  env='prod'
 fi
 
 #获取当前分支名
