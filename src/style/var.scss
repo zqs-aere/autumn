@@ -1,0 +1,31 @@
+// color
+$dark-color-list: (
+  primary: #000
+);
+$light-color-list: (
+  primary: #fff
+);
+
+$color-obj: (
+  dark: $dark-color-list,
+  light: $light-color-list
+);
+
+// bg-color
+$dark-bg-list: (
+  primary: #fff
+);
+$light-bg-list: (
+  primary: #000
+);
+
+$bg-obj: (
+  dark: $dark-bg-list,
+  light: $light-bg-list
+);
+
+
+$theme-key: (
+  dark,
+  light
+);

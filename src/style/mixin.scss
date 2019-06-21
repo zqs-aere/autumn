@@ -1,0 +1,28 @@
+// 字体颜色
+@mixin color ($key: a, $list: $color-list, $o: 1) {
+  @each $themeKey in $theme-key {
+    [data-theme="#{$themeKey}"] &{
+      $list: getList($colors-obj, $themeKey);
+      color: getValue($list, $key, $o);
+    }
+  }
+}
+
+// 背景颜色
+@mixin bg-color ($key: a, $list: $color-list, $o: 1) {
+  @each $themeKey in $theme-key {
+    [data-theme="#{$themeKey}"] &{
+      $list: getList($colors-obj, $themeKey);
+      color: getValue($list, $key, $o);
+    }
+  }
+}
+
+@mixin border-color ($key: primary) {
+  @each $themeKey in $theme-key {
+    [data-theme="#{$themeKey}"] &{
+      $list: getList($colors-obj, $themeKey);
+      border-color: getValue($list, $key);
+    }
+  }
+};

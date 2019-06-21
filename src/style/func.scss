@@ -1,0 +1,6 @@
+@function getValue ($key: a, $list: $color-list, $o: 1) {
+  @return rgba($color: map-get($list, $key), $alpha: $o)
+};
+@function getList ($obj, $key) {
+  @return map-get($map: $obj, $key: $key);
+};
