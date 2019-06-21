@@ -6,10 +6,12 @@ var url = require('url');
 var fs = require('fs');
 var path = require('path');
 var cp = require('child_process');
+var BASE_URL = process.env.BASE_URL || '/';
+console.log(BASE_URL);
 console.log(__dirname);
 console.log(__filename);
 console.log(process.cwd());
-console.log(path.resolve('./'));
+console.log(path.resolve(path.join('./', BASE_URL)));
 // 创建服务
 var httpServer = http.createServer(processRequest);
 
@@ -49,7 +51,7 @@ function processRequest(request, response) {
   //request里面切出标识符字符串
   var requestUrl = request.url;
   //url模块的parse方法 接受一个字符串，返回一个url对象,切出来路径
-  var pathName = url.parse(requestUrl).pathname;
+  var pathName = path.join(BASE_URL, url.parse(requestUrl).pathname);
 
   //对路径解码，防止中文乱码
   var pathName = decodeURI(pathName);
@@ -65,7 +67,7 @@ function processRequest(request, response) {
     response.end();
   }
   //获取资源文件的绝对路径
-  var filePath = path.resolve(__dirname + pathName);
+  var filePath = path.resolve(path.join(__dirname, BASE_URL, pathName));
   // console.log(filePath);
   //获取对应文件的文档类型
   //我们通过path.extname来获取文件的后缀名。由于extname返回值包含”.”，所以通过slice方法来剔除掉”.”，
