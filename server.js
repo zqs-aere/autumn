@@ -6,7 +6,7 @@ var url = require('url');
 var fs = require('fs');
 var path = require('path');
 var cp = require('child_process');
-var BASE_URL = process.env.BASE_URL || '/';
+var BASE_URL = process.env.BASE_URL || '/dist/';
 console.log(BASE_URL);
 console.log(__dirname);
 console.log(__filename);
