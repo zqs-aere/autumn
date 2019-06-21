@@ -82,8 +82,8 @@ function processRequest(request, response) {
     if (err) {
       var apiStart = process.env.API_START || '/v1';
       // 如果文件不存在 并且请求的不是api接口 返回index.html
-      if (!request.url.startsWith(apiStart)) {
-        var indexHtml = fs.readFileSync('./index.html', 'utf-8');
+      if (!request.url.startsWith(apiStart) && path.extname(pathName) === '') {
+        var indexHtml = fs.readFileSync(path.join(__dirname, BASE_URL, './index.html'), 'utf-8');
         response.writeHead(200, {
           'Content-Type': 'text/html; charset=utf-8'
         });

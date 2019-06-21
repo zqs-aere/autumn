@@ -44,7 +44,7 @@ echo '编译项目'
 npm run build
 
 echo '删除老版本'
-ssh ${deploy_user}@${deploy_host} "rm -rf "${deploy_path}/*
+ssh ${deploy_user}@${deploy_host} "rm -rf "${deploy_path}/dist
 echo '上传新版本'
 scp -r ./dist ${deploy_user}@${deploy_host}:${deploy_path}
 
