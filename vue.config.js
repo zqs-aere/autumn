@@ -33,8 +33,10 @@ module.exports = {
     'style-resources-loader': {
       preProcessor: 'scss',
       patterns: [
-        path.resolve(__dirname, './src/style/index.scss'),
+        path.resolve(__dirname, './src/style/var.scss'),
+        path.resolve(__dirname, './src/style/func.scss'),
+        path.resolve(__dirname, './src/style/mixin.scss')
       ],
     },
-  },
+  }
 }
