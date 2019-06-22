@@ -29,6 +29,7 @@ module.exports = {
   configureWebpack: {
     plugins
   },
+  productionSourceMap: false,
   pluginOptions: {
     'style-resources-loader': {
       preProcessor: 'scss',
