@@ -7,6 +7,7 @@ import MyDropDown from './my-drop-down'
 import MyTable from './my-table'
 import MyTableColumn from './my-table/my-table-column.vue'
 import MyPagination from './my-pagination'
+import MyLogo from './my-logo'
 
 Vue.component('my-transition', MyTransition)
 Vue.component('my-img', MyImg)
@@ -15,3 +16,4 @@ Vue.component('my-drop-down', MyDropDown)
 Vue.component('my-table', MyTable)
 Vue.component('my-table-column', MyTableColumn)
 Vue.component('my-pagination', MyPagination)
+Vue.component('my-logo', MyLogo)

@@ -1,17 +1,27 @@
 <template>
   <div id="app">
-    <div class="ts-40">q123</div>
-    <div class="ts-40">xxxxx</div>
+    <main-layout></main-layout>
   </div>
 </template>
 
+<script>
+import MainLayout from './views/main'
+
+export default {
+  name: 'App',
+  components: {
+    MainLayout
+  },
+  mounted () {
+  }
+}
+</script>
+
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  // color: #2c3e50;
-  color: #ef4567;
+  color: #2c3e50;
 }
 </style>

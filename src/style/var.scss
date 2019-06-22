@@ -1,9 +1,11 @@
 // color
 $dark-color-list: (
-  primary: #000
+  primary: #000,
+  bg-primary: #fff
 );
 $light-color-list: (
-  primary: #fff
+  primary: #fff,
+  bg-primary: #000
 );
 
 $color-obj: (
@@ -11,21 +13,10 @@ $color-obj: (
   light: $light-color-list
 );
 
-// bg-color
-$dark-bg-list: (
-  primary: #fff
-);
-$light-bg-list: (
-  primary: #000
-);
-
-$bg-obj: (
-  dark: $dark-bg-list,
-  light: $light-bg-list
-);
-
-
 $theme-key: (
   dark,
   light
 );
+
+$header-h: 50px;
+$footer-h: 200px;
