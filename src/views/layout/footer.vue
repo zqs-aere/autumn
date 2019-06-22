@@ -17,6 +17,7 @@
 <style scoped lang="scss">
   .main-footer {
     height: $footer-h;
+    @include color(primary);
     @include bg-color(bg-primary);
   }
 </style>

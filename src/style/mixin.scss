@@ -13,7 +13,7 @@
   @each $themeKey in $theme-key {
     [data-theme="#{$themeKey}"] &{
       $list: getList($color-obj, $themeKey);
-      color: getValue($key, $list, $o);
+      background-color: getValue($key, $list, $o);
     }
   }
 }

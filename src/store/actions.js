@@ -6,7 +6,7 @@ const setState = (commit, data) => {
   commit(types.SET_STATE, data)
 }
 
-const setLocalTheme = (theme) => {
+const setHtmlTheme = (theme) => {
   setStorage('theme', theme)
   let html = document.documentElement || document.body
   html.setAttribute('data-theme', theme)
@@ -27,13 +27,13 @@ export default {
         key: 'theme',
         val: defaltTheme
       })
-      setLocalTheme(defaltTheme)
     } else {
       setState(commit, {
         key: 'theme',
         val: theme
       })
-      setLocalTheme(defaltTheme)
     }
+
+    setHtmlTheme(theme || localTheme || defaltTheme)
   }
 }

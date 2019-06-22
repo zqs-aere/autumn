@@ -13,6 +13,7 @@ export default {
     MainLayout
   },
   mounted () {
+    this.$store.dispatch('setTheme')
   }
 }
 </script>
