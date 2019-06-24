@@ -1,4 +1,3 @@
-// import './registerServiceWorker'
 import './components'
-import 'normalize.css'
+import './style/reset.scss'
 import './style/global.scss'
