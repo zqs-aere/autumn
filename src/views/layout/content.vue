@@ -1,6 +1,5 @@
 <template>
   <section class="main-section min-h pd-lr16">
-    content =====> change hash
     <img class="img" src="../../assets/bg/bg_01.jpg" alt="">
   </section>
 </template>
@@ -20,5 +19,6 @@
     width: 80%;
     height: auto;
     margin: 0 auto;
+    display: block;
   }
 </style>
