@@ -1,7 +1,6 @@
 #!/bin/sh
 #获取环境名
 env=''
-hostName=$2 || ''
 
 if [ x$1 != x ];then
   env=$1
@@ -24,7 +23,6 @@ echo '地址 => '${deploy_host}
 echo '用户 => '${deploy_user}
 echo '路径 => '${deploy_path}
 echo '缓存路径 => '${deploy_cache_path}
-echo 'hostName =>'${hostName}
 
 echo '储存当前修改'
 git stash
@@ -36,10 +34,10 @@ echo '编译项目'
 npm run build
 
 echo '删除老版本和缓存'
-echo ${deploy_user}@${hostName || deploy_host} "rm -rf "${deploy_path}/dist ${deploy_cache_path}
-ssh ${deploy_user}@${hostName || deploy_host} "rm -rf "${deploy_path}/dist ${deploy_cache_path}
+# echo ${deploy_user}@${deploy_host} "rm -rf "${deploy_path}/dist ${deploy_cache_path}
+ssh ${deploy_user}@${deploy_host} "rm -rf "${deploy_path}/dist ${deploy_cache_path}
 echo '上传新版本'
-scp -r ./dist ${deploy_user}@${hostName || deploy_host}:${deploy_path}
+scp -r ./dist ${deploy_user}@${deploy_host}:${deploy_path}
 
 echo '切回工作分支 => '${curr_branch}
 git checkout $curr_branch
