@@ -1,6 +1,6 @@
 <template>
   <footer class="main-footer">
-    footer
+    footer(change hash)
   </footer>
 </template>
 
