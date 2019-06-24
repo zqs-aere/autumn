@@ -7,8 +7,8 @@
     "build": "NODE_ENV=production vue-cli-service build",
     "lint": "vue-cli-service lint",
     "start": "npm run serve",
-    "deploy": "sudo bash ./deploy.sh",
-    "deploy:no-npm": "sudo bash ./deploy.no_npm.sh"
+    "deploy": "sudo bash ./deploy.sh '' autumn",
+    "deploy:no": "sudo bash ./deploy.no_npm.sh '' autumn"
   },
   "dependencies": {
     "core-js": "^2.6.5",
