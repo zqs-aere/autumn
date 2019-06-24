@@ -1,6 +1,6 @@
 <template>
   <section class="main-section min-h pd-lr16">
-    content
+    content(change hash)
   </section>
 </template>
 
