@@ -1,6 +1,6 @@
 <template>
   <header class="main-header">
-    header
+    header (change hash)
   </header>
 </template>
 
