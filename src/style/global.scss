@@ -89,10 +89,15 @@ html, body {
   min-height: 100vh;
 }
 
+.ul-reset {
+  list-style: none;
+  padding: 0;
+}
+
 .min-h {
   min-height: calc(100vh - #{$header-h} - #{$footer-h});
 }
 
 .min-h_no-footer {
-  min-height: calc(100vh - #{$footer-h});
+  min-height: calc(100vh - #{$header-h});
 }

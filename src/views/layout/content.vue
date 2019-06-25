@@ -1,5 +1,5 @@
 <template>
-  <section class="main-section min-h pd-lr16">
+  <section class="main-section min-h_no-footer pd-lr16">
     <img class="img" src="../../assets/bg/bg_01.jpg" alt="">
   </section>
 </template>

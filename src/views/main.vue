@@ -2,7 +2,7 @@
   <main class="main">
     <main-header></main-header>
     <main-content></main-content>
-    <main-footer></main-footer>
+    <!-- <main-footer></main-footer> -->
   </main>
 </template>
 
@@ -26,7 +26,4 @@
 </script>
 
 <style scoped lang="scss">
-  .main {
-    min-width: 1200px;
-  }
 </style>
