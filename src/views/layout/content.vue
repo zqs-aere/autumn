@@ -6,6 +6,8 @@
     ]"
     class="main-section pd-lr16">
     <img class="img" src="../../assets/bg/bg_01.jpg" alt="">
+    <mark-down>i am a ~~tast~~ **test**.</mark-down>
+    <mark-down>:-( #标题#</mark-down>
   </section>
 </template>
 
