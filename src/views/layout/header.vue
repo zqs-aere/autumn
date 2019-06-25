@@ -1,6 +1,12 @@
 <template>
-  <header class="main-header flex-box space-between pd-lr16">
-    <span class="meun weight">meun</span>
+  <header
+    :class="type"
+    class="main-header flex-box space-between pd-lr16">
+    <span
+      class="meun weight"
+      @click.stop="changeAside">
+      meun
+    </span>
 
     <span>logo</span>
 
@@ -16,8 +22,18 @@
 <script>
   export default {
     name: 'main_header',
+    props: {
+      type: {
+        type: String
+      }
+    },
     data () {
       return {
+      }
+    },
+    methods: {
+      changeAside () {
+        this.$emit('changeAside')
       }
     }
   }
@@ -37,8 +53,18 @@
     height: $header-h;
     @include color(primary);
     @include bg-color(bg-primary);
+
+    &.fixed {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9;
+      width: 100%;
+      box-sizing: border-box;
+    }
   }
   .meun {
     display: none;
+    cursor: pointer;
   }
 </style>

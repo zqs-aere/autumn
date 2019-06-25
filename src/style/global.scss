@@ -91,11 +91,16 @@ html, body {
 
 .ul-reset {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
 .min-h {
   min-height: calc(100vh - #{$header-h} - #{$footer-h});
+}
+
+.min-h_header-fixed {
+  min-height: 100vh;
 }
 
 .min-h_no-footer {

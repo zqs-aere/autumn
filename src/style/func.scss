@@ -4,3 +4,13 @@
 @function getList ($obj, $key) {
   @return map-get($map: $obj, $key: $key);
 };
+@function getSingleValue ($key: primary, $o: 1) {
+  @if data-theme=light {
+    $list: getList($color-obj, light);
+    @return rgba($color: map-get($list, $key), $alpha: $o)
+  };
+  @if data-theme=dark {
+    $list: getList($color-obj, dark);
+    @return rgba($color: map-get($list, $key), $alpha: $o)
+  }
+};

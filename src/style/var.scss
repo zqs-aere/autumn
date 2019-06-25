@@ -1,11 +1,13 @@
 // color
-$dark-color-list: (
-  primary: #2c3e50,
-  bg-primary: #efefef
-);
 $light-color-list: (
+  primary: #2c3e50,
+  bg-primary: #efefef,
+  sha-primary: #555
+);
+$dark-color-list: (
   primary: #efefef,
-  bg-primary: #2c3e50
+  bg-primary: #2c3e50,
+  sha-primary: #000
 );
 
 $color-obj: (

@@ -30,3 +30,13 @@ export let getStorage = function (key) {
     console.log(err)
   }
 }
+
+export let lockBody = function (isLock) {
+  const body = document.body || document.documentElement
+  body.classList[isLock ? 'add' : 'remove']('lock-body')
+}
+
+export let addBodyEvent = function (fn, val, type) {
+  const body = document.body || document.documentElement
+  body[val ? 'addEventListener' : 'removeEventListener'](type || 'click', fn)
+}
