@@ -4,4 +4,4 @@ import './style/global.scss'
 import '../public/js/fast-click'
 
 const attachFastClick = Origami.fastclick
-attachFastClick(document.body)
+attachFastClick(document.body || document.documentElement)

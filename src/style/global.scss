@@ -88,6 +88,9 @@
 html, body {
   min-height: 100vh;
 }
+body {
+  -webkit-tap-highlight-color: transparent;
+}
 
 .ul-reset {
   list-style: none;
@@ -105,4 +108,8 @@ html, body {
 
 .min-h_no-footer {
   min-height: calc(100vh - #{$header-h});
+}
+
+.lock-body {
+  overflow: hidden;
 }
