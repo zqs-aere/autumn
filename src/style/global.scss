@@ -90,9 +90,9 @@ html, body {
 }
 
 .min-h {
-  height: calc(100vh - #{$header-h} - #{$footer-h});
+  min-height: calc(100vh - #{$header-h} - #{$footer-h});
 }
 
 .min-h_no-footer {
-  height: calc(100vh - #{$footer-h});
+  min-height: calc(100vh - #{$footer-h});
 }
