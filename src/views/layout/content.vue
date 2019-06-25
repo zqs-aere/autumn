@@ -7,7 +7,11 @@
     class="main-section pd-lr16">
     <img class="img" src="../../assets/bg/bg_01.jpg" alt="">
     <mark-down>i am a ~~tast~~ **test**.</mark-down>
-    <mark-down>:-( #标题#</mark-down>
+    <mark-down># 标题 :-( </mark-down>
+    <mark-down source=":-) i am a ~~tast~~ **test**."></mark-down>
+    <mark-down># h1 Heading 8-)</mark-down>
+    <mark-down source="> tip 111"></mark-down>
+    <mark-down source=">> tip 111"></mark-down>
   </section>
 </template>
 
