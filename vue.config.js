@@ -1,5 +1,6 @@
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin")
 const path = require('path')
 
 const plugins = []
@@ -27,7 +28,20 @@ if (process.argv.includes('--report')) {
 
 module.exports = {
   configureWebpack: {
-    plugins
+    plugins,
+    optimization: {
+      minimizer: [
+        new UglifyJsPlugin({
+          uglifyOptions: {
+            compress: {
+              warnings: false,
+              drop_console: true, // console
+              drop_debugger: false
+            }
+          }
+        })
+      ]
+    }
   },
   productionSourceMap: false,
   pluginOptions: {
