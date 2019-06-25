@@ -13,6 +13,9 @@ export default {
     MainLayout
   },
   mounted () {
+    console.log('log')
+    console.info('info')
+    console.dir('dir')
     this.$store.dispatch('setTheme')
   }
 }
