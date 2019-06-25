@@ -31,9 +31,9 @@
       }
     },
     mounted () {
-      if (document.body.clientWidth < 900) {
-        this.showAside = true
-      }
+      // if (document.body.clientWidth < 900) {
+      //   this.showAside = true
+      // }
     },
     methods: {
       changeAside () {
