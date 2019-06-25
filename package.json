@@ -8,8 +8,8 @@
     "report": "NODE_ENV=production vue-cli-service build --report",
     "lint": "vue-cli-service lint",
     "start": "npm run serve",
-    "deploy": "bash ./deploy.sh",
-    "deploy:not-npm": "bash ./deploy.no_npm.sh"
+    "deploy:npm": "bash ./deploy.sh",
+    "deploy": "bash ./deploy.no_npm.sh"
   },
   "dependencies": {
     "core-js": "^2.6.5",
