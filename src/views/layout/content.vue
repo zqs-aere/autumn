@@ -6,18 +6,18 @@
     ]"
     class="main-section pd-lr16">
     <img class="img" src="../../assets/bg/bg_01.jpg" alt="">
-    <mark-down>i am a ~~tast~~ **test**.</mark-down>
-    <mark-down># 标题 :-( </mark-down>
-    <mark-down source=":-) i am a ~~tast~~ **test**."></mark-down>
-    <mark-down># h1 Heading 8-)</mark-down>
-    <mark-down source="> tip 111"></mark-down>
-    <mark-down source=">> tip 111"></mark-down>
+    <mark-down></mark-down>
   </section>
 </template>
 
 <script>
+  import MarkDown from '../common/mark-down'
+
   export default {
     name: 'main_section',
+    components: {
+      MarkDown
+    },
     props: {
       type: {
         type: String

@@ -29,6 +29,17 @@ if (process.argv.includes('--report')) {
 module.exports = {
   configureWebpack: {
     plugins,
+    module: {
+      rules: [
+        {
+          test: /\.md$/,
+          use: [
+            { loader: 'html-loader' },
+            { loader: 'markdown-loader', options: {} }
+          ]
+        }
+      ]
+    },
     optimization: {
       minimizer: [
         new UglifyJsPlugin({

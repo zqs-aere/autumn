@@ -1,10 +1,11 @@
 <template>
   <main class="main">
-    <main-header
+    <!-- <main-header
       type="fixed"
       @changeAside="changeAside">
-    </main-header>
-    <main-content type="header-fixed"></main-content>
+    </main-header> -->
+    <!-- <main-content type="header-fixed"></main-content> -->
+    <sky></sky>
     <!-- <main-footer></main-footer> -->
 
     <main-aside :show.sync="showAside"></main-aside>
@@ -16,6 +17,7 @@
   import MainContent from './layout/content'
   import MainFooter from './layout/footer'
   import MainAside from './layout/aside'
+  import Sky from './common/sky'
 
   export default {
     name: 'route_main',
@@ -23,7 +25,8 @@
       MainHeader,
       MainContent,
       MainFooter,
-      MainAside
+      MainAside,
+      Sky
     },
     data () {
       return {
