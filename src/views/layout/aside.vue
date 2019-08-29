@@ -52,7 +52,7 @@
     height: 100vh;
     z-index: 10;
     width: 60vw;
-    box-shadow: 0 2px 6.5px -2.5px getSingleValue(sha-primary);
-    @include bg-color(bg-primary);
+    // box-shadow: 0 2px 6.5px -2.5px getSingleValue(sha-primary);
+    // @include bg-color(primary);
   }
 </style>

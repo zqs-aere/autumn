@@ -24,11 +24,11 @@ echo '用户 => '${deploy_user}
 echo '路径 => '${deploy_path}
 echo '缓存路径 => '${deploy_cache_path}
 
-echo '储存当前修改'
-git stash
+# echo '储存当前修改'
+# git stash
 
-echo '切换到需发布的分支 => '${deploy_branch}
-git checkout $deploy_branch
+# echo '切换到需发布的分支 => '${deploy_branch}
+# git checkout $deploy_branch
 
 echo '编译项目'
 npm run build
@@ -39,8 +39,8 @@ ssh ${deploy_user}@${deploy_host} "rm -rf "${deploy_path}/dist ${deploy_cache_pa
 echo '上传新版本'
 scp -r ./dist ${deploy_user}@${deploy_host}:${deploy_path}
 
-echo '切回工作分支 => '${curr_branch}
-git checkout $curr_branch
+# echo '切回工作分支 => '${curr_branch}
+# git checkout $curr_branch
 
 echo '释放修改'
 git stash pop

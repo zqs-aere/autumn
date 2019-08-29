@@ -51,8 +51,8 @@
 
   .main-header {
     height: $header-h;
-    @include color(primary);
-    @include bg-color(bg-primary);
+    // @include color(primary);
+    // @include bg-color(primary);
 
     &.fixed {
       position: fixed;
